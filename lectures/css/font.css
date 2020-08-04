@@ -3,7 +3,8 @@
 /* input, select, textarea, button, pre, tt 등은 브라우저에서 글꼴을 설정한다. */
 body, input, select, textarea, button {
     /* font: 1em "Titillium Web", "Source Sans Pro", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
-    font: 1em "Source Sans Pro", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif;
+    /* font: 1em "Source Sans Pro", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
+    font: 1em "Open Sans", "Source Sans Pro", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif;
     /* font-family: "Open Sans", Roboto, "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
 }
 
