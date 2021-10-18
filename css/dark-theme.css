@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+@media speech {
+    body {
+        /* font-size: 1.6em; */
+        color: #ccc;
+        /* background: #333; */
+        background-color: #272727;
+        /* padding: 2em; */
+    }
+
+    pre {
+        padding: 1.2em;
+        background-color: #444;
+        border-radius: 10px;
+        margin: 0.8em 0;
+        line-height: 1.6;
+    }
+
+    /* h1 {
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: -1px;
+        margin: 0.8em 0;
+        background-color: #555;
+        padding: 0.8em 1em;
+        border-radius: 8px;
+    } */
+
+    /* p {
+        margin: 1em 0;
+    } */
+
+    button {
+        font-size: 1em;
+        padding: 0.4em 1em;
+        font-family: Consolas, "Courier New", monospace;
+    }
+
+    a:link { color: deepskyblue; }
+    a:visited { color: mediumpurple; }
+}    
+
+body.dark {
+    color: #ccc;
+    font-size: 1.6rem;
+    font-size: 20pt;
+    background-color: #272727;
+    padding: 100px;
+}
+
+/* .no-padding */
+body.dark.no-padding {
+    padding: 0;
+    font-size: 1rem;
+}
+
+body.dark button {
+    font-size: 1em;
+    padding: 0.4em 1em;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+body.dark a:link { color: deepskyblue; }
+body.dark a:visited { color: mediumpurple; }
+
+body.dark pre {
+    line-height: 1.5;
+
+    margin: 25px 0;
+    padding: 20px 25px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* .title for <h1> and <h2> */
+body.dark.title h1, body.dark.title h2 {
+    font-size: 2em;
+    font-weight: bold;
+
+    margin: 25px 0;
+    padding: 20px 25px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* .list for <ul> and <ol> */
+body.dark.list ul, body.dark.list ol {
+    padding-left: 2em;
+    margin: 1em 0;
+}
+
+body.dark.list ul { list-style-type: disc; }
+body.dark.list ol { list-style-type: decimal; }
+
+/* .para for <p> */
+body.dark.para p {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+/* the first element in <body> */
+body.dark > :first-child {
+    margin-top: 0 !important;
+}
