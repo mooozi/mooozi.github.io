@@ -13,6 +13,7 @@ pre, code, tt, .monospace {
 }
 
 .bold { font-weight: bold; }
+.larger { font-size: 1.6em; }
 
 /* remember to define focus styles! */
 /*

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* 글자 관련 스타일 속성은 후손 요소에 상속된다. */
 /* 따라서 문서 전체에서 사용하는 기본 글꼴 설정은 body 요소에 해주는 것이 좋다. */
 /* input, select, textarea, button, pre, tt 등은 브라우저에서 글꼴을 설정한다. */
@@ -8,11 +10,9 @@ body, input, select, textarea, button {
     /* font-family: "Open Sans", Roboto, "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
 }
 
-pre, code, tt, .monospace {
+pre, code, tt {
     font-family: Consolas, "Courier New", Courier, "나눔바른고딕", "나눔고딕", "맑은 고딕", monospace;
 }
-
-.bold { font-weight: bold; }
 
 /* remember to define focus styles! */
 /*

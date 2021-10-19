@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* dark theme */
 body.dark {
     color: #ccc;
     font-size: 1.6rem;
@@ -15,18 +14,15 @@ body.dark.no-padding {
     font-size: 1rem;
 }
 
-/* for <button> */
 body.dark button {
     font-size: 1em;
     padding: 0.4em 1em;
     font-family: Consolas, "Courier New", monospace;
 }
 
-/* for <a> */
 body.dark a:link { color: deepskyblue; }
 body.dark a:visited { color: mediumpurple; }
 
-/* for <pre> */
 body.dark pre {
     line-height: 1.5;
 
@@ -68,6 +64,3 @@ body.dark.para p {
 body.dark > :first-child {
     margin-top: 0 !important;
 }
-
-/* smaller font */
-body.smaller { font-size: 1rem; }

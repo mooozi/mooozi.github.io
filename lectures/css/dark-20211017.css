@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+    /* font-size: 1.6em; */
+    color: #ccc;
+    /* background: #333; */
+    background-color: #272727;
+    /* padding: 2em; */
+}
+
+pre {
+    padding: 1.2em;
+    background-color: #444;
+    border-radius: 10px;
+    margin: 0.8em 0;
+    line-height: 1.6;
+}
+
+/* h1 {
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 0.8em 0;
+    background-color: #555;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+} */
+
+/* p {
+    margin: 1em 0;
+} */
+
+button {
+    font-size: 1em;
+    padding: 0.4em 1em;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: mediumpurple;
+}
