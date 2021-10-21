@@ -12,8 +12,13 @@ pre, code, tt, .monospace {
     font-family: Consolas, "Courier New", Courier, "나눔바른고딕", "나눔고딕", "맑은 고딕", monospace;
 }
 
-.bold { font-weight: bold; }
 .larger { font-size: 1.6em; }
+
+.bold { font-weight: bold; }
+
+/* for <strong> and <b> */
+body.bold { font-weight: normal; }
+body.bold strong, body.bold b { font-weight: bold; }
 
 /* remember to define focus styles! */
 /*

@@ -65,9 +65,9 @@ body.dark.para p {
 }
 
 /* the first element in <body> */
-body.dark > :first-child {
+/* body.dark > :first-child {
     margin-top: 0 !important;
-}
+} */
 
 /* smaller font */
 body.smaller { font-size: 1rem; }
