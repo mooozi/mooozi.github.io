@@ -20,6 +20,11 @@ pre, code, tt, .monospace {
 body.bold { font-weight: normal; }
 body.bold strong, body.bold b { font-weight: bold; }
 
+/* for <i> and <em> */
+body.italic i, body.italic em {
+    font-style: italic;
+}
+
 /* remember to define focus styles! */
 /*
 :focus {

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* stylesheet for a lecture */
+body.lecture {
+    font-size: 20pt;
+    padding: 100px;
+}
+
+/* dark theme */
+body.dark {
+    color: #ddd;
+    background-color: #272727;
+}
+
+/* body:not(.dark) {
+    background-color: #cbc8b0;
+} */
+
+body:not(.dark) {
+    background-color: #dbd9ce;
+}
+
+body.white {
+    background-color: white;
+}
+
+/* .no-padding */
+body.lecture.no-padding {
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* for <button> */
+body.lecture button {
+    font-size: 1em;
+    padding: 0.4em 1em;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+/* for <a> in the dark mode */
+body.dark a:link { color: deepskyblue; }
+body.dark a:visited { color: mediumpurple; }
+
+/* for <pre> */
+body.lecture pre {
+    line-height: 1.5;
+
+    margin: 25px 0;
+    padding: 20px 25px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* .title for <h1> and <h2> */
+body.lecture.title h1, body.lecture.title h2 {
+    font-size: 2em;
+    font-weight: bold;
+
+    margin: 25px 0;
+    padding: 20px 25px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* .list for <ul> and <ol> */
+body.lecture.list ul, body.lecture.list ol {
+    padding-left: 2em;
+    margin: 1em 0;
+}
+
+body.lecture.list ul { list-style-type: disc; }
+body.lecture.list ol { list-style-type: decimal; }
+
+/* .para for <p> */
+body.lecture.para p {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+/* the first element in <body> */
+/* body.lecture > :first-child {
+    margin-top: 0 !important;
+} */
+
+/* smaller font */
+body.smaller { font-size: 1rem; }
+
+/* large font */
+body.large { font-size: 20pt; }
+
