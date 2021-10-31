@@ -24,16 +24,17 @@ body.white {
     background-color: white;
 }
 
-/* .large-font */
-body.lecture.large-font {
-    font-size: 24px;
+/* .no-padding */
+body.no-padding {
+    font-size: 1rem;
+    padding: 0;
 }
 
-/* .no-padding */
-body.lecture.no-padding {
-    padding: 0;
-    font-size: 1rem;
-}
+/* .large-font */
+body.large-font { font-size: 24px; }
+
+/* .small-font */
+body.small-font { font-size: 1rem; }
 
 /* for <button> */
 body.lecture button {
@@ -50,8 +51,8 @@ body.dark a:visited { color: mediumpurple; }
 body.lecture pre {
     line-height: 1.5;
 
-    margin: 25px 0;
-    padding: 20px 25px;
+    margin: 1em 0;
+    padding: 0.6em 1em;
     background-color: #444;
     border-radius: 8px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -61,15 +62,15 @@ body.lecture pre {
 body.lecture.title h1, body.lecture.title h2 {
     font-size: 2em;
     font-weight: bold;
-    margin: 25px 0;
+    margin: 0.8em 0;
 }
 
 body.lecture.title-box h1, body.lecture.title-box h2 {
     font-size: 2em;
     font-weight: bold;
 
-    margin: 25px 0;
-    padding: 20px 25px;
+    margin: 0.8em 0;
+    padding: 0.6em 1em;
     background-color: #444;
     border-radius: 8px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -86,7 +87,7 @@ body.lecture.list ol { list-style-type: decimal; }
 
 /* .para for <p> */
 body.lecture.para p {
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 1em 0;
 }
 
@@ -94,10 +95,3 @@ body.lecture.para p {
 /* body.lecture > :first-child {
     margin-top: 0 !important;
 } */
-
-/* smaller font */
-body.smaller { font-size: 1rem; }
-
-/* large font */
-body.large { font-size: 20pt; }
-
