@@ -2,7 +2,7 @@
 
 /* stylesheet for a lecture */
 body.lecture {
-    font-size: 20pt;
+    font-size: 18px;
     padding: 100px;
 }
 
@@ -22,6 +22,11 @@ body:not(.dark) {
 
 body.white {
     background-color: white;
+}
+
+/* .large-font */
+body.lecture.large-font {
+    font-size: 24px;
 }
 
 /* .no-padding */
@@ -54,6 +59,11 @@ body.lecture pre {
 
 /* .title for <h1> and <h2> */
 body.lecture.title h1, body.lecture.title h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+body.lecture.title-box h1, body.lecture.title-box h2 {
     font-size: 2em;
     font-weight: bold;
 
