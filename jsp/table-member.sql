@@ -22,7 +22,7 @@ INSERT INTO member (id, account, passwd, name, email)
 VALUES (SEQ_MEMBER_ID.NEXTVAL, 'watson', 'cat', 'Emma Watson', 'emma@watson.com');
 
 INSERT INTO member (id, account, passwd, name, email)
-VALUES (SEQ_MEMBER_ID.NEXTVAL, 'potter', 'deer', 'Harry Poter', 'harry@potter.com');
+VALUES (SEQ_MEMBER_ID.NEXTVAL, 'potter', 'deer', 'Harry Potter', 'harry@potter.com');
 
 INSERT INTO member (id, account, passwd, name, email)
 VALUES (SEQ_MEMBER_ID.NEXTVAL, 'carey', 'oriole', 'Mariah Carey', 'mariah@carey.com');
