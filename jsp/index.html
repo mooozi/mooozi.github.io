@@ -24,40 +24,40 @@
 <div id="materials">
 
 
-<h1 id="자바-프로그래밍과-스프링-프레임워크">자바 프로그래밍과 스프링 프레임워크</h1>
-<h2 id="jdkjava-development-kit">JDK(Java Development Kit)</h2>
+<h1>Java Programming and Spring Framework</h1>
+<h2>JDK(Java Development Kit)</h2>
 <ul>
 <li><a href="https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html">Oracle Java SE 8</a></li>
 <li><a href="https://adoptium.net/">Eclipse Temurin</a></li>
 <li><a href="https://github.com/ojdkbuild/ojdkbuild">OpenJDK</a></li>
 </ul>
-<h2 id="통합-개발-환경ide-integrated-development-environment">통합 개발 환경(IDE; Integrated Development Environment)</h2>
+<h2>통합 개발 환경(IDE; Integrated Development Environment)</h2>
 <ul>
 <li><a href="https://www.eclipse.org/">Eclipse IDE</a></li>
 </ul>
-<h2 id="편집기">편집기</h2>
+<h2>편집기</h2>
 <ul>
 <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 </ul>
-<h2 id="서블릿-컨테이너">서블릿 컨테이너</h2>
+<h2>서블릿 컨테이너</h2>
 <ul>
 <li><a href="https://tomcat.apache.org/">Apache Tomcat 9</a></li>
 </ul>
-<h2 id="데이터베이스">데이터베이스</h2>
+<h2>데이터베이스</h2>
 <ul>
 <li><a href="https://www.oracle.com/database/technologies/xe-downloads.html">Oracle Database XE</a></li>
 <li><a href="https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html">Oracle JDBC Driver</a></li>
 <li><a href="https://dbeaver.io/">DBeaver</a></li>
 <li><a href="https://www.oracle.com/tools/downloads/sqldev-downloads.html">SQL Developer</a></li>
 </ul>
-<h2 id="스프링-프레임워크">스프링 프레임워크</h2>
+<h2>스프링 프레임워크</h2>
 <ul>
 <li><a href="https://spring.io/tools/">Spring Tool Suite 4</a></li>
 <li><a href="https://github.com/spring-projects/toolsuite-distribution/wiki/Spring-Tool-Suite-3">Spring Tool Suite 3</a></li>
 <li><a href="https://github.com/spring-projects/spring-framework">Spring Framework Repository</a></li>
 <li><a href="https://repo.spring.io/ui/native/release/org/springframework/spring/">Spring Framework Library</a></li>
 </ul>
-<h2 id="자바-라이브러리와-도구">자바 라이브러리와 도구</h2>
+<h2>자바 라이브러리와 도구</h2>
 <ul>
 <li><a href="https://tomcat.apache.org/download-taglibs.cgi">JSP Standard Tag Library</a></li>
 <li><a href="https://code.google.com/archive/p/json-simple/">JSON.simple</a></li>
@@ -65,7 +65,7 @@
 <li><a href="https://maven.apache.org/">Apache Maven</a></li>
 <li><a href="https://gradle.org/">Gradle</a></li>
 </ul>
-<h2 id="레퍼런스와-유용한-링크">레퍼런스와 유용한 링크</h2>
+<h2>레퍼런스와 유용한 링크</h2>
 <ul>
 <li><a href="https://mooozi.github.io/references.html">개발자에게 유용한 레퍼런스와 문서들</a></li>
 <li><a href="https://javaee.github.io/javaee-spec/javadocs/">Java EE 8 Specification API</a></li>
@@ -73,29 +73,23 @@
 <li><a href="https://github.com/naver/d2codingfont">D2Coding Font</a></li>
 <li><a href="https://github.com/">GitHub</a></li>
 </ul>
-<h2 id="jsp-프로그래밍-과정-수업-자료">JSP 프로그래밍 과정 수업 자료</h2>
+<h2>JSP 프로그래밍 과정 수업 자료</h2>
 <ul>
-<li><a href="https://mooozi.github.io/jsp/web.xml"><code>web.xml</code></a></li>
-<li><a href="https://mooozi.github.io/jsp/table-member.sql"><code>table-member.sql</code></a></li>
-<li><a href="https://mooozi.github.io/jsp/cookie.js"><code>cookie.js</code></a></li>
+<li><a href="web.xml"><code>web.xml</code></a></li>
+<li><a href="table-member.sql"><code>table-member.sql</code></a></li>
+<li><a href="cookie.js"><code>cookie.js</code></a></li>
 </ul>
-<h2 id="스프링-프레임워크에서-java-configuration을-이용하는-경우-pomxml-파일에-추가">스프링 프레임워크에서 Java Configuration을 이용하는 경우 <code>pom.xml</code> 파일에 추가</h2>
-<pre><code class="language-xml"><div><span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>maven-war-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.2.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">failOnMissingWebXml</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">failOnMissingWebXml</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span></div></code></pre>
-<h2 id="의존성-주입을-테스트하는-프로젝트의-pomxml-파일">의존성 주입을 테스트하는 프로젝트의 <code>pom.xml</code> 파일</h2>
+<h2>스프링 프레임워크 과정 수업 자료</h2>
 <ul>
-<li><a href="https://mooozi.github.io/jsp/com.spring.pro11-pom.xml"><code>pom.xml</code></a></li>
+<li><a href="pro11-pom.xml"><code>/pro11/pom.xml</code></a></li>
+<li><a href="pro11-root-context.xml"><code>/pro11/src/main/webapp/WEB-INF/spring/root-context.xml</code></a></li>
+<li><a href="pro11-TimeMapper.xml"><code>/pro11/src/main/resources/com/spring/mapper/TimeMapper.xml</code></a></li>
+<li><a href="pro11-log4jdbc.log4j2.properties"><code>/pro11/src/main/resources/log4jdbc.log4j2.properties</code></a></li>
+<li><a href="pro11-log4j.xml"><code>/pro11/src/test/resources/log4j.xml</code></a></li>
+<li><a href="pro11j-pom.xml"><code>/pro11j/pom.xml</code></a></li>
+<li><a href="pro12-pom.xml"><code>/pro12/pom.xml</code></a></li>
 </ul>
-<h2 id="hikaricp-라이브러리를-테스트하는-프로젝트의-root-contextxml-파일">HikariCP 라이브러리를 테스트하는 프로젝트의 <code>root-context.xml</code> 파일</h2>
-<ul>
-<li><a href="https://mooozi.github.io/jsp/com.spring.pro11-root-context.xml"><code>root-context.xml</code></a></li>
-</ul>
+
 
 </div>
 <script src="https://code.jquery.com/jquery.min.js"></script>
