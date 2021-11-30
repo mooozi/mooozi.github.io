@@ -27,5 +27,5 @@
 	</bean>
 
 	<!-- MyBatis Mapper -->
-	<mybatis-spring:scan base-package="com.spring.mapper" />
+	<mybatis-spring:scan base-package="com.board.mapper" />
 </beans>
