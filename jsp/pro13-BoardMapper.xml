@@ -2,21 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- <mapper> 태그의 namespace 속성 값은 Mapper 인터페이스와 같은 이름으로 설정해야 한다. -->
-<mapper namespace="com.spring.mapper.BoardMapper">
+<mapper namespace="com.board.mapper.BoardMapper">
 
-	<!-- <select> 태그의 id 속성 값은 메소드의 이름과 같아야 한다.
-       resultType 속성은 SELECT 쿼리의 결과를 특정 클래스의 객체로 만들기 위해 설정한다.
-       이때 SQL 문의 끝에 세미콜론(;)이 들어가지 않도록 주의한다.
-       CDATA 부분은 쿼리에서 부등호(>)를 쓰기 위해 넣은 것이다. -->
-	<select id="getList" resultType="com.spring.domain.BoardVO">
+	<select id="getList" resultType="com.board.domain.BoardVO">
 	<![CDATA[
 		SELECT * FROM board WHERE id > 0
 	]]>
 	</select>
 
-	<!-- 매개변수로 전달된 Criteria 객체의 값을 이용해 페이징 처리 -->
-	<select id="getListWithPagingView" resultType="com.spring.domain.BoardVO">
+	<select id="getListWithPagingView" resultType="com.board.domain.BoardVO">
 	<![CDATA[
 		SELECT id, title, writer, regdate, updatedate
 		FROM (
@@ -29,16 +23,14 @@
 	]]>
 	</select>
 
-	<!-- 매개변수로 전달된 Criteria 객체의 값을 이용해 페이징 처리 -->
-	<select id="getListWithPagingV1" resultType="com.spring.domain.BoardVO">
+	<select id="getListWithPagingV1" resultType="com.board.domain.BoardVO">
 		SELECT id, title, writer, regdate, updatedate
 		FROM board
 		ORDER BY id DESC
 		OFFSET (#{page} - 1) * #{rowsPerPage} ROWS FETCH FIRST #{rowsPerPage} ROWS ONLY
 	</select>
 
-	<!-- 매개변수로 전달된 Criteria 객체의 값을 이용해 페이징 처리 -->
-	<select id="getListWithPagingV2" resultType="com.spring.domain.BoardVO">
+	<select id="getListWithPagingV2" resultType="com.board.domain.BoardVO">
 		SELECT id, title, writer, regdate, updatedate
 		FROM board
 		WHERE
@@ -61,50 +53,37 @@
 		OFFSET (#{page} - 1) * #{rowsPerPage} ROWS FETCH FIRST #{rowsPerPage} ROWS ONLY
 	</select>
 
-	<!-- 검색 키워드가 포함된 경우 WHERE 절 SQL -->
-	<!-- MyBatis 프레임워크에서는 여러 군데에서 사용되는 SQL 문의 일부를 <sql> 태그를 이용해 저장할 수 있다. -->
 	<sql id="whereSearch">
-		<!-- 아래 구문으로 SQL 문이 만들어지면, 앞에 prefix 속성에 지정된 값을 붙여서 SQL 문을 생성 -->
 		<trim prefix="WHERE">
-			<!-- Criteria 객체의 getTargetList 메서드로 가져온 배열을 이용해 SQL 문 생성 -->
 			<foreach item="target" collection="targetList" separator="OR">
-				<!-- #{} 표현식은 값을 작은따옴표로 묶어서 출력하고, ${} 표현식은 그대로 출력 -->
 				${target} LIKE '%' || #{keyword} || '%'
 			</foreach>
 		</trim>
 	</sql>
 
-	<!-- 매개변수로 전달된 Criteria 객체의 값을 이용해 페이징 처리(검색 키워드 포함) -->
-	<select id="getListWithPaging" resultType="com.spring.domain.BoardVO">
+	<select id="getListWithPaging" resultType="com.board.domain.BoardVO">
 		SELECT id, title, writer, regdate, updatedate
 		FROM board
-		<!-- <include> 태그를 이용해 <sql> 태그로 미리 작성해둔 SQL 문을 가져온다. -->
 		<include refid="whereSearch"></include>
 		ORDER BY id DESC
 		OFFSET (#{page} - 1) * #{rowsPerPage} ROWS FETCH FIRST #{rowsPerPage} ROWS ONLY
 	</select>
 
-	<!-- 새로운 게시물을 등록(추가된 레코드의 PK 값을 알 필요가 없는 경우) -->
-	<!-- MyBatis는 내부적으로 JDBC의 PreparedStatement 객체를 이용해서 SQL을 처리한다.
-       PreparedStatement 객체의 매개변수를 처리하는 "?"는 "#{attr}"으로 치환한다. -->
 	<insert id="insert">
 		INSERT INTO board (id, title, content, writer)
 		VALUES (SEQ_BOARD_ID.NEXTVAL, #{title}, #{content}, #{writer})
 	</insert>
 
-	<!-- 새로운 게시물을 등록(추가된 레코드의 PK 값을 알아야 하는 경우) -->
 	<insert id="insertSelectKey">
-		<!-- MyBatis의 @SelectKey 주해를 이용해 시퀀스 값을 미리 구해 지정한 이름으로 저장해둔다. -->
 		<selectKey keyProperty="id" order="BEFORE" resultType="long">
 			SELECT SEQ_BOARD_ID.NEXTVAL FROM dual
 		</selectKey>
 
-		<!-- 미리 구해둔 시퀀스 값을 "#{id}"과 같이 이용한다. -->
 		INSERT INTO board (id, title, content, writer)
 		VALUES (#{id}, #{title}, #{content}, #{writer})
 	</insert>
 
-	<select id="read" resultType="com.spring.domain.BoardVO">
+	<select id="read" resultType="com.board.domain.BoardVO">
 		SELECT * FROM board WHERE id = #{id}
 	</select>
 
@@ -117,12 +96,10 @@
 		DELETE FROM board WHERE id = #{id}
 	</delete>
 
-	<!-- 전체 게시물의 개수 -->
 	<select id="getTotalV1" resultType="int">
 		SELECT COUNT(*) FROM board WHERE id > 0
 	</select>
 
-	<!-- 검색 키워드가 포함된 게시물들의 개수 -->
 	<select id="getTotal" resultType="int">
 		SELECT COUNT(*)
 		FROM board
