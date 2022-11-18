@@ -1,0 +1,108 @@
+/* my own style */
+body[class*=vscode] {
+    /* color: #111; */
+    font-family: "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.8;
+}
+
+[class*=vscode] h1,
+[class*=vscode] h2,
+[class*=vscode] h3,
+[class*=vscode] h4,
+[class*=vscode] h5,
+[class*=vscode] h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+[class*=vscode] h1:first-of-type { margin-top: 0; }
+
+[class*=vscode] h1,
+[class*=vscode] h2,
+[class*=vscode] h3 {
+    font-family: "나눔스퀘어 ExtraBold", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 900;
+}
+
+[class*=vscode] h1,
+[class*=vscode] h2 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 4px;
+}
+
+[class*=vscode] h2 {
+    border-color: #666;
+}
+
+[class*=vscode] h1 { font-size: 2.4rem; }
+[class*=vscode] h2 { font-size: 2rem; }
+[class*=vscode] h3 { font-size: 1.6rem; }
+[class*=vscode] h4 { font-size: 1rem; }
+[class*=vscode] h5 { font-size: 1rem; }
+[class*=vscode] h6 { font-size: 1rem; }
+
+[class*=vscode] blockquote {
+    padding: 1em 1em 0.6em;
+    margin: 1em 0 1em 1em;
+}
+
+[class*=vscode] table {
+    margin: 1.6em 0;
+    border-color: #aaa;
+    border-width: 1px;
+    border-style: solid none;
+}
+
+[class*=vscode] pre code {
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* C:\Users\hhyoon\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\notebook-out\index.js */
+#preview {
+    /* color: #111; */
+    font-family: "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.5;
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#preview h1:first-of-type { margin-top: 0; }
+
+#preview h1,
+#preview h2,
+#preview h3 {
+    font-family: "나눔스퀘어 ExtraBold", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 900;
+}
+
+#preview h1,
+#preview h2 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 4px;
+}
+
+#preview h2 {
+    border-color: #666;
+}
+
+#preview h1 { font-size: 2em; }
+#preview h2 { font-size: 1.5em; }
+#preview h3 { font-size: 1.25em; }
+#preview h4 { font-size: 1em; }
+#preview h5 { font-size: 1em; }
+#preview h6 { font-size: 1em; }
+/* ---------------------------------------------------------------- */
