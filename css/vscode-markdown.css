@@ -36,12 +36,12 @@ body[class*=vscode] {
     border-color: #666;
 }
 
-[class*=vscode] h1 { font-size: 2.4rem; }
-[class*=vscode] h2 { font-size: 2rem; }
-[class*=vscode] h3 { font-size: 1.6rem; }
-[class*=vscode] h4 { font-size: 1rem; }
-[class*=vscode] h5 { font-size: 1rem; }
-[class*=vscode] h6 { font-size: 1rem; }
+[class*=vscode] h1 { font-size: 2em; }
+[class*=vscode] h2 { font-size: 1.5em; }
+[class*=vscode] h3 { font-size: 1.25em; }
+[class*=vscode] h4 { font-size: 1em; }
+[class*=vscode] h5 { font-size: 1em; }
+[class*=vscode] h6 { font-size: 1em; }
 
 [class*=vscode] blockquote {
     padding: 1em 1em 0.6em;
