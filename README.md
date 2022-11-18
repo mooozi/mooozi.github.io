@@ -1,2 +1,4 @@
 # mooozi.github.io
-GitHub.io
+GitHub Pages
+
+Sample page
