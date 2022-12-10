@@ -1,38 +1,30 @@
-/* 글자 관련 스타일 속성은 후손 요소에 상속된다. */
-/* 따라서 문서 전체에서 사용하는 기본 글꼴 설정은 body 요소에 해주는 것이 좋다. */
-/* input, select, textarea, button, pre, tt 등은 브라우저에서 글꼴을 설정한다. */
+@charset "utf-8";
+
+/*
+ * 글자 관련 스타일 속성은 후손 요소에 상속된다.
+ * 따라서 문서 전체에서 사용하는 기본 글꼴 설정은 <body> 요소에 해주는 것이 좋다.
+ * <input>, <select>, <textarea>, <button>, <pre>, <tt> 요소 등은 브라우저에서 글꼴을 설정한다.
+ */
 body, input, select, textarea, button {
-    /* font: 1em "Titillium Web", "Source Sans Pro", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
-    font: 1em "Source Sans Pro", "Open Sans", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif;
-    /* font: 1em "Open Sans", "Source Sans Pro", "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
-    /* font-family: "Open Sans", Roboto, "나눔바른고딕", "나눔고딕", "맑은 고딕", Tahoma, Verdana, sans-serif; */
+    font: 1em "Source Sans Pro", "Open Sans", "Titillium Web", Roboto, Verdana, Tahoma, "Segoe UI", Helvetica, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, sans-serif;
 }
 
 pre, code, tt, .monospace {
-    font-family: Consolas, "Courier New", Courier, "나눔바른고딕", "나눔고딕", "맑은 고딕", monospace;
+    font-family: Consolas, "Courier New", Courier, Monaco, Menlo, "Andale Mono", "Lucida Console", "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", monospace;
 }
 
 .larger { font-size: 1.6em; }
 
-.bold { font-weight: bold; }
-
 /* for <strong> and <b> */
-body.bold { font-weight: normal; }
 body.bold strong, body.bold b { font-weight: bold; }
 
 /* for <i> and <em> */
-body.italic i, body.italic em {
-    font-style: italic;
-}
+body.italic i, body.italic em { font-style: italic; }
 
 /* remember to define focus styles! */
 /*
-:focus {
-	outline: 0;
-}
+:focus { outline: 0; }
 */
 
 /* 형광색 배경색 */
-.fluorescent {
-    background-color: #e4ff75;
-}
+.fluorescent { background-color: #e4ff75; }

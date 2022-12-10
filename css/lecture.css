@@ -12,12 +12,9 @@ body.dark {
     background-color: #272727;
 }
 
-/* body:not(.dark) {
-    background-color: #cbc8b0;
-} */
-
 body:not(.dark) {
     background-color: #dbd9ce;
+    /* background-color: #cbc8b0; */
 }
 
 body.white {
@@ -40,7 +37,6 @@ body.small-font { font-size: 1rem; }
 body.lecture button {
     font-size: 1em;
     padding: 0.4em 1em;
-    font-family: Consolas, "Courier New", monospace;
 }
 
 /* for <a> in the dark mode */
@@ -68,7 +64,6 @@ body.lecture.title h1, body.lecture.title h2 {
 body.lecture.title-box h1, body.lecture.title-box h2 {
     font-size: 2em;
     font-weight: bold;
-
     margin: 0.8em 0;
     padding: 0.6em 1em;
     background-color: #444;
@@ -92,6 +87,8 @@ body.lecture.para p {
 }
 
 /* the first element in <body> */
-/* body.lecture > :first-child {
+/*
+body.lecture > :first-child {
     margin-top: 0 !important;
-} */
+}
+*/
