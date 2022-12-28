@@ -1,7 +1,7 @@
 /* my own style */
 body[class*=vscode] {
     /* color: #111; */
-    font-family: "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", "Gowun Dodum", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.8;
 }
 
@@ -22,7 +22,7 @@ body[class*=vscode] {
 [class*=vscode] h1,
 [class*=vscode] h2,
 [class*=vscode] h3 {
-    font-family: "나눔스퀘어", "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "나눔스퀘어", "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", "Gowun Dodum", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 900;
 }
 
@@ -70,12 +70,11 @@ body[class*=vscode] {
     line-height: 1.5;
 }
 
-
 /* ---------------------------------------------------------------- */
 /* C:\Users\hhyoon\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\notebook-out\index.js */
 #preview {
     /* color: #111; */
-    font-family: "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", "Gowun Dodum", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
 }
 
@@ -91,12 +90,17 @@ body[class*=vscode] {
     line-height: 1.25;
 }
 
-#preview h1:first-of-type { margin-top: 0; }
+#preview h1:first-child,
+#preview h2:first-child,
+#preview h3:first-child,
+#preview h4:first-child,
+#preview h5:first-child,
+#preview h6:first-child { margin-top: 0; }
 
 #preview h1,
 #preview h2,
 #preview h3 {
-    font-family: "나눔스퀘어", "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "나눔스퀘어", "Open Sans", "Source Sans Pro", Verdana, Geneva, Tahoma, "Segoe UI", Helvetica, Arial, "나눔바른고딕", "Gowun Dodum", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 900;
 }
 
@@ -111,7 +115,7 @@ body[class*=vscode] {
 #preview h1,
 #preview h2 {
     border-bottom: 1px solid #999;
-    padding-bottom: 4px;
+    padding-bottom: 4px !important;
 }
 
 #preview h2 {
@@ -126,10 +130,15 @@ body[class*=vscode] {
 #preview h6 { font-size: 1em; }
 
 #preview blockquote {
-    padding: 1em;
-    margin: 1em 0 1em 1em;
+    /* padding: 1em; */
+    padding: 0.6em 1em !important;
+    /* margin: 1em 0 1em 1em; */
+    margin: 0 0 0 1em;
     border-left: 5px solid rgba(0, 122, 204, 0.5);
     background-color: rgba(127, 127, 127, 0.1);
     color: #8b949e;
 }
+
+#preview blockquote > :first-child { margin-top: 0px; }
+#preview blockquote > :last-child { margin-bottom: 0px; }
 /* ---------------------------------------------------------------- */
