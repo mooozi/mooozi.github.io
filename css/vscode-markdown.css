@@ -73,6 +73,12 @@ body[class*=vscode] {
     line-height: 1.5;
 }
 
+[class*=vscode] p,
+[class*=vscode] ol,
+[class*=vscode] ul {
+    margin: 0 0 0.6em;
+}
+
 [class*=vscode] *:first-child {
     margin-top: 0px;
 }
@@ -147,7 +153,7 @@ body[class*=vscode] {
 #preview p,
 #preview ol,
 #preview ul {
-    margin: 0 0 0.7em;
+    margin: 0 0 0.6em;
 }
 
 #preview blockquote {
