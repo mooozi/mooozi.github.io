@@ -12,7 +12,8 @@ body.dark {
     background-color: #272727;
 }
 
-body:not(.dark) {
+/* body:not(.dark) { */
+body.paper {
     background-color: #dbd9ce;
     /* background-color: #cbc8b0; */
 }
